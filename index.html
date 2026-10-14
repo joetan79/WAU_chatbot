@@ -17,6 +17,17 @@
       This page requires JavaScript to display.
     </div>
   </noscript>
+<style>
+  /* 强制将 Botpress Webchat 窗口宽度拉宽至屏幕的 1/3 */
+  iframe[id*="bp-web-widget"],
+  iframe[title*="chat" i],
+  div[id*="bp-web-widget-container"],
+  .bpw-layout {
+    width: 33.33vw !important;  /* 占浏览器视口宽度的 1/3 */
+    min-width: 420px !important; /* 确保在笔记本或小屏幕上不会缩得太窄 */
+    max-width: 540px !important; /* 避免在超宽带鱼屏上过宽 */
+  }
+</style>
 </head>
 <body>
   <div id="__bundler_thumbnail">
